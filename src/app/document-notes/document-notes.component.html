@@ -1,0 +1,8 @@
+<app-notes-common #notes></app-notes-common>
+<label for="files">Choose document type:</label>
+<select name="files" id="files" #documentType>
+  <option value="PDF">PDF</option>
+  <option value="DOCX">DOCX</option>
+</select>
+<br><br>
+<button type="submit" class="btn btn-primary" (click)="saveNotes()">Submit</button>

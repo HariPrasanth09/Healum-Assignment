@@ -1,0 +1,88 @@
+<div class="col-md-3">
+  <h4>Text Notes</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let notes of notesService.textNotes;index as i">
+      <tr>
+        <th scope="row"> {{i+1}}</th>
+        <td>{{notes.description}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- <p>{{ description }}</p>   -->
+
+
+<!-- <div class="col-md-6 form-group">
+  <input type="email" class="form-control row" placeholder="Enter text" [ngModel]="notesDecsription">
+</div> -->
+
+<div class="col-md-3">
+  <h4>Article Notes</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let notes of notesService.articleNotes;index as i">
+      <tr>
+        <th scope="row"> {{i+1}}</th>
+        <td>{{notes.title}}</td>
+        <td>{{notes.description}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="col-md-3">
+  <h4>Picture Notes</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Image</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let notes of notesService.pictureNotes;index as i">
+      <tr>
+        <th scope="row"> {{i+1}}</th>
+        <td>{{notes.title}}</td>
+        <td>{{notes.description}}</td>
+        <td>{{notes.img}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="col-md-3">
+  <h4>Document Notes</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Doc Type</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let notes of notesService.documentNotes;index as i">
+      <tr>
+        <th scope="row"> {{i+1}}</th>
+        <td>{{notes.title}}</td>
+        <td>{{notes.description}}</td>
+        <td>{{notes.documentType}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

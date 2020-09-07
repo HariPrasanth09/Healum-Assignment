@@ -1,0 +1,31 @@
+
+  <nav class="navbar navbar-default">
+    <div class="navbar-header" style="text-align: center">
+      <h1>Acme Notes</h1>
+    </div>
+    <ul class="nav navbar-nav nav-pills">
+      <li routerLinkActive="active">
+        <a routerLink="/allnotes">All Notes</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/notes">Text Notes</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/article-notes">Article Notes</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/picture-notes">Picture Notes</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/document-notes">Document Notes</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/publish-notes">Publish Notes</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
